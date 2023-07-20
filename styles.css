@@ -1,9 +1,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&family=Roboto+Mono:wght@100;400&display=swap');
-
-
-*{
+  @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Kanit:ital,wght@1,600&family=Lobster&family=Lumanosimo&family=Merriweather:wght@300&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Playfair+Display&family=Public+Sans:wght@100&family=Roboto+Mono:wght@100;400&family=Roboto:wght@400;500&family=Tektur&display=swap');*{
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
@@ -24,12 +21,12 @@ body{
   .home-img {
     position: absolute;
     top: 22rem;
-    right: 7rem;
+    right: 11rem;
     transform: translateY(-50%);
   }
   
   .home-img img {
-    width: 290px; 
+    width: 270px; 
     height: auto;
     transform: scale(0.9);
     border-radius: 50%;
@@ -43,36 +40,40 @@ body{
   }
   
   header {
-   
-    margin: 0%;
-    height:10vh;
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color:#2a2f33;  
+    background-color: rgba(29, 55, 90, 0.5);    z-index: 100; 
   }
-
+  
   ul {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     margin-right: 5rem;
-    padding-right:10%;
+    padding-right: 10%;
   }
- 
+  
   li {
     margin-left: 10px;
-    padding: 2%; 
+    padding: 2%;
   }
-
+  
   ul li a {
+    font-family: 'Kanit', sans-serif;
     text-decoration: none;
-    color:#61DBFB;
+    color: #61DBFB;
     font-size: 20px;
     font-weight: 500;
     position: relative;
   }
+  
   ul li a::after {
     content: '';
     position: absolute;
@@ -88,6 +89,7 @@ body{
   ul li a:hover::after {
     transform: scaleX(1);
   }
+  
  
 
   @keyframes typing {
@@ -425,7 +427,7 @@ p{
     
    }
 
- 
+  }
  
 
 /* Media queries for project section */
@@ -466,3 +468,7 @@ p{
       margin-left: 13rem;
     }
   }
+
+  
+
+

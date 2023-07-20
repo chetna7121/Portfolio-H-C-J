@@ -8,5 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(simulateTyping, 1000); 
   });
   
+  
 
   
